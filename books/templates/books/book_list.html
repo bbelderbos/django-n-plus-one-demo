@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>N+1 demo</title>
+</head>
+<body>
+    {% for book in books %}
+        <div>
+            <h2>{{ book.title }}</h2>
+            <p>By {{ book.author.name }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
